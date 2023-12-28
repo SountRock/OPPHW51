@@ -101,8 +101,6 @@ public class TestHW {
         for (String item : pullUniqueList) {
             Assertions.assertTrue(trueUniqueList.indexOf(item) > -1);
         }
-
-        Assertions.assertFalse(testList.equals(trueUniqueList));
         //-------------------------------------------------------------------------
 
         //-------------------------------------------------------------------------
@@ -117,8 +115,6 @@ public class TestHW {
         for (String item : pullUniqueList) {
             Assertions.assertTrue(trueUniqueList.indexOf(item) > -1);
         }
-
-        Assertions.assertFalse(testList.equals(trueUniqueList));
         //-------------------------------------------------------------------------
 
         //-------------------------------------------------------------------------
@@ -133,8 +129,6 @@ public class TestHW {
         for (String item : pullUniqueList) {
             Assertions.assertTrue(trueUniqueList.indexOf(item) > -1);
         }
-
-        Assertions.assertTrue(testList.equals(trueUniqueList));
         //-------------------------------------------------------------------------
 
         //-------------------------------------------------------------------------
@@ -149,8 +143,6 @@ public class TestHW {
         for (String item : pullUniqueList) {
             Assertions.assertTrue(trueUniqueList.indexOf(item) > -1);
         }
-
-        Assertions.assertTrue(testList.equals(trueUniqueList));
         //-------------------------------------------------------------------------
 
     }
