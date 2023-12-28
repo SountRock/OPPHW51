@@ -20,8 +20,8 @@ public class TestHW {
         boolean test3 = wh.contains(testList, "22");
         boolean test4 = wh.contains(testList, "33");
         boolean test5 = wh.contains(testList, "44");
-        boolean test6 = wh.contains(testList, "55");
-        boolean test7 = wh.contains(testList, "56");
+        boolean test6 = wh.contains(testList, "5" + "5");
+        boolean test7 = wh.contains(testList, "65");
 
         //Then
         Assertions.assertEquals(test1, true);
@@ -65,7 +65,7 @@ public class TestHW {
 
         //-------------------------------------------------------------------------
         //Given 3
-        testList = Arrays.asList(new String[]{"November Rain", "November Rain"});
+        testList = Arrays.asList(new String[]{"November Rain", "November Rain", "November Rain"});
 
         //When 3
         boolean test3 = wh.hasExactly(testList, "November Rain");
@@ -105,8 +105,8 @@ public class TestHW {
 
         //-------------------------------------------------------------------------
         //Given 2
-        testList = Arrays.asList(new String[]{"1", "2", "3", "4", "4", "2"});
-        trueUniqueList = Arrays.asList(new String[]{"1", "2", "3", "4"}); // должно быть
+        testList = Arrays.asList(new String[]{"1", "5", "3", "5", "4", "3"});
+        trueUniqueList = Arrays.asList(new String[]{"1", "3", "4", "5"}); // должно быть
 
         //When 2
         pullUniqueList = wh.unique(testList); // получили
@@ -119,8 +119,8 @@ public class TestHW {
 
         //-------------------------------------------------------------------------
         //Given 3
-        testList = Arrays.asList(new String[]{"1", "2", "3", "4"});
-        trueUniqueList = Arrays.asList(new String[]{"1", "2", "3", "4"}); // должно быть
+        testList = Arrays.asList(new String[]{"1", "3", "4", "5"});
+        trueUniqueList = Arrays.asList(new String[]{"1", "3", "4", "5"}); // должно быть
 
         //When 3
         pullUniqueList = wh.unique(testList); // получили
